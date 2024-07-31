@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h1>Liste des Articles</h1>
-    <!-- <button (click)="router.navigate(['/article/new'])">Ajouter un Article</button> -->
+    <button (click)="router.navigate(['/article/new'])">Ajouter un Article</button>
     <ul>
       <li *ngFor="let article of articles">
         <h2>{{ article.title }}</h2>

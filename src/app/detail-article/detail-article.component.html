@@ -1,1 +1,21 @@
-<p>detail-article works!</p>
+ <div class="container">
+    <h1>Détails de l'Article</h1>
+    <div *ngIf="article">
+      <h2>{{ article.title }}</h2>
+      <p>{{ article.body }}</p>
+      <button (click)="router.navigate(['/'])">Retour à la Liste</button>
+    </div>
+    <div *ngIf="!article">
+      <p>Chargement...</p>
+    </div>
+  </div> 
+   
+   
+   <!-- <div *ngIf="article">
+    <h2>{{ article.title }}</h2>
+    <p>{{ article.body }}</p>
+  </div>
+  <div *ngIf="!article">
+    <p>Chargement des détails de l'article...</p>
+  </div>
+   -->

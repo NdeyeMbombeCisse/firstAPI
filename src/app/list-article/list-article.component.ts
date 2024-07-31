@@ -14,7 +14,7 @@ import { CommonModule } from '@angular/common';
 export class ListArticleComponent implements OnInit {
   articles: any[] = [];
 
-  constructor(private articleService: ArticleService, private router: Router) {
+  constructor(private articleService: ArticleService, public router: Router) {
     this.router = router;
    }
 
@@ -29,7 +29,7 @@ export class ListArticleComponent implements OnInit {
   }
 
   editArticle(id: number): void {
-    this.router.navigate(['/article-form', id]);
+    this.router.navigate(['/article/edit', id]);
   }
 
   deleteArticle(id: number): void {

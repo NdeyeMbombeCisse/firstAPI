@@ -9,7 +9,7 @@ import { DetailArticleComponent } from './detail-article/detail-article.componen
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,AddArticleComponent,DetailArticleComponent,CommonModule],
+  imports: [RouterOutlet,AddArticleComponent,CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
