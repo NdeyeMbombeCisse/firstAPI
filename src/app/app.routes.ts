@@ -9,7 +9,7 @@ import { DetailArticleComponent } from './detail-article/detail-article.componen
 ListArticleComponent
 export const routes: Routes = [
     { path: '', redirectTo: '/articles', pathMatch: 'full' },
-    {path:'',component:ListArticleComponent},
+    {path:'index.html',component:ListArticleComponent},
     { path: 'article/new', component: AddArticleComponent  },
     { path: 'article/edit/:id', component: AddArticleComponent },
     { path: 'article/:id', component: DetailArticleComponent}
